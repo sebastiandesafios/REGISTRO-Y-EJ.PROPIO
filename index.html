@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC y Edad de Mascota</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>DESAFÍO: CALCULAR IMC Y EDAD DE MASCOTA</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="calculado.html">IMC</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculadora.html">Edad de Mascota</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form-container">
+        <form id="registroForm" onsubmit="generarCorreo()">
+            <h2>Formulario de registro</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <input type="submit" value="Generar Correo">
+        </form>
+
+        <script src="./assets/java/correo.js"></script>
+    </div>
+
+    <div class="text">
+        <h1>CALCULAR IMC</h1>
+        <p>¿Cuáles son los problemas para la salud asociados con la obesidad en perros?
+            Incluso un ligero sobrepeso puede afectar negativamente la salud y la calidad de vida de tu perro. 
+            Al igual que los seres humanos, los perros con sobrepeso sufren más presión en casi todos sus órganos.
+            Los órganos con presión a causa de sobrepeso pueden conllevar enfermedades e incluso la muerte.</p>
+        <p>El sobrepeso y la obesidad en los perros es un factor de riesgo para las siguientes enfermedades graves:</p>
+        <ul>
+            <li>artritis</li>
+            <li>diabetes</li>
+            <li>dificultades respiratorias</li>
+            <li>enfermedades respiratorias</li>
+            <li>cáncer</li>
+            <li>hipertensión</li>
+            <li>lesiones en las articulaciones</li>
+        </ul>
+        <p>Además, los perros con sobrepeso pueden tener una esperanza de vida más corta. Por todos estos
+            motivos es importante saber si tu perro tiene sobrepeso, qué factores pueden haberlo causado
+            y cómo puedes ayudarle a perder peso y recobrar su salud.</p>
+        <p>¿Cómo puedo saber si mi perro tiene sobrepeso?</p>
+        <p>Hay varios modos de comprobar si tu perro tiene problemas de sobrepeso. Si no puedes notar las
+            costillas de tu perro cuando tocas su pecho, esta es una señal clara de que tiene sobrepeso u obesidad.</p>
+        <p>También puedes utilizar la siguiente Escala de puntuación de la condición corporal o nuestra
+            calculadora de IMC (índice de masa corporal) de perros para comprobar si el peso de tu perro es adecuado.</p>
+        <p>Tu veterinario también podrá decirte si tu perro padece sobrepeso, indicarte cuál es su peso
+            ideal y recomendarte un plan para perder peso que sea específico para sus necesidades.</p>
+    </div>
+    <div class="text-center">
+        <img src="./assets/img/img1.png" alt="Descripción de la imagen" class="imagen">
+        <img src="./assets/img/img2.png" alt="Descripción de la imagen" class="imagen">
+    </div>
+    <div class="form-container">
+        <h2>plantearse otro ejercicio</h2>
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="nuevaTarea" placeholder="Ingresa una nueva tarea">
+        <button onclick="agregarTarea()">Agregar Tarea</button>
+        <ul id="listaTareas"></ul>
+    
+        <script src="./assets/java/lista.js"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
